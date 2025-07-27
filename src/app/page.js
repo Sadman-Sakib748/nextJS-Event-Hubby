@@ -1,19 +1,16 @@
-"use client"
+import React from 'react'
+import HeroSection from './Component/HeroSection/page'
+import StatsSection from './Component/StatsSection/page'
+import FeaturedEvents from './Component/FeaturedEvents/page'
+import CallToAction from './Component/CallToAction/page'
 
-import HeroGlobe from "./Component/HeroGlobe/HeroGlobe";
-import { EventCard } from "./Component/EventCard/EventCard";
-import ExploreCategories from "./Component/ExploreCategories/page";
-
-
-
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
-      <HeroGlobe />
-    <ExploreCategories />
-     
-         
-            <EventCard />
+     <HeroSection />
+     <StatsSection />
+     <FeaturedEvents />
+     <CallToAction />
     </div>
-  );
+  )
 }
